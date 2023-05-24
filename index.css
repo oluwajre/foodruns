@@ -123,10 +123,10 @@ body:not(.phone-contact)    {
     background-color: var(--secondary-color);
     width: 100vw;
     right: -7vw;
-    top: -50vw;
+    top: -60vh;
     position: absolute;
     z-index: -9999;
-    transition: .2s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
 .hamburger:has(input:checked) div   {
