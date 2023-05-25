@@ -296,7 +296,11 @@ body:not(.phone-contact)    {
         margin-bottom: 4%;
     }
 
-    .socials img, .phone-contact img, .copyright img    {
+    .socials img    {
+        width: 1.5em;
+    }
+
+    .phone-contact img, .copyright img    {
         width: 1.4em;
     }
 
