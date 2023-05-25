@@ -177,22 +177,19 @@ body:not(.phone-contact)    {
     background-color: var(--secondary-color);
     background-size: cover;
     background-clip: border-box;
-    height: 45%;
-    padding-left: 7vw;
-    padding-right: 7vw;
     color: var(--secondary-color);
+    text-align: center;
+}
+
+.footer-section > div   {
+    width: 85vw;
 }
 
 .socials-main     {
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     align-items: start;
     margin-top: 8%;
-}
-
-.address    {
-    max-width: 10em;
-    flex-direction: column;
 }
 
 .socials    {
@@ -206,7 +203,7 @@ body:not(.phone-contact)    {
 }
 
 .socials img     {
-    width: 1.5rem;
+    width: 1.5em;
     margin-right: 1.25em;
 }
 
@@ -241,38 +238,42 @@ body:not(.phone-contact)    {
         border-color: transparent transparent var(--secondary-color) transparent;
 }
 
+.address    {
+    max-width: 10em;
+    text-align: left;
+}
+
 .phone-contact, .copyright  {
     font-size: 1.4em;
     font-weight: normal;
+    display: inline-flex;
+    gap: .5em;
+    
 }
 
 .phone-contact  {
-    margin-top: 8%;
-    text-align: left;
+    margin-top: 3%;
+}
+
+.phone-contact div:nth-child(2)     {
     user-select: text;
     -moz-user-select: text;
     -webkit-user-select: text;
 }
 
 .copyright  {
-    text-align: center;
+    justify-content: center;
 }
 
-.phone-contact span, .copyright span     {
-    position: relative;
+.phone-contact div:first-child, .copyright div:first-child   {
+    display: grid;
+    place-items: center;
+    width: 1.2em;
 }
 
-.phone-contact span  {
-    left: 1.31em;
+.phone-contact div:first-child img, .copyright div:first-child img  {
+    width: 100%;
 }
-
-.phone-contact img, .copyright img  {
-    width: 1.57rem;
-    position: absolute;
-    bottom: 2%;
-    right: 105%;
-}
-
 
 /* PORTRAIT MEDIA QUERY */
 
@@ -291,14 +292,15 @@ body:not(.phone-contact)    {
         align-self: center;
     }
 
+    .socials img    {
+        width: 5vw;
+    }
+
     .phone-contact, .copyright  {
         margin-top: 6%;
-        margin-bottom: 4%;
     }
 
-    .socials img, .phone-contact img, .copyright img    {
-        width: 1.4em;
+    .phone-contact div:first-child, .copyright div:first-child  {
+        width: 4.5vw;
     }
-
-
 }
