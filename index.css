@@ -10,7 +10,7 @@
     --padding-sides: 7vw;
     --primary-color: #95371B;
     --secondary-color: #F5EFEF;
-    --tertiary-color: black;
+    --tertiary-color: #3C170D;
     --lightning-color: #ff950bec;
 }
 
@@ -296,11 +296,7 @@ body:not(.phone-contact)    {
         margin-bottom: 4%;
     }
 
-    .socials img    {
-        width: 1.5em;
-    }
-
-    .phone-contact img, .copyright img    {
+    .socials img, .phone-contact img, .copyright img    {
         width: 1.4em;
     }
 
